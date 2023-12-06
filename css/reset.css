@@ -1,0 +1,104 @@
+/* Reset/normalizar */
+/* cajas */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+/* padding */
+html, body, ul[class], ol[class] {
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+}
+
+/* Margen a 0 */
+h1,h2,h3,h4, p, li, figure, figcaption { 
+  margin: 0;
+}
+
+html {font-size: 1em;}
+
+body {
+ min-height: 100vh;
+ line-height: 1.5;
+}
+
+
+input, button, textarea, select {  font: inherit; }
+
+ul, li { margin: 0; padding: 0; }
+
+/* clear fix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* var */
+:root {
+  --tamImgAutor: 80px;
+  --anchoMax: 1200px;
+  --anchoMin: 400px;
+
+  --1Cols: 100%;
+  --2Cols: 50%;
+  --3Cols: 33.33333%;
+  --4Cols: 25%;
+
+  --fondo0: #CFD8DC;
+  --fondo1: #2B3636;
+  --fondo3: #09A59A;
+  --fondo4: whitesmoke;
+  --fondo5: #088d83;
+
+  --color0: white;
+  --color1: #374758;
+  --color2: #BAC1C7;
+  --color3: lightgrey;
+
+
+  --anchoIcono: 128px;
+  --altoIcono: 32px;
+
+  --imgHeader: url(../imgs/fondo.jpg);
+  --logo:  url(../imgs/logo.png);
+  --imgSocial: url(../imgs/sprite_social.png);
+}
+
+
+:root {
+  --sp-base: calc( 1em );
+  --sp-0: 0;
+  --sp-b4: calc(var(--sp-base) / 4);
+  --sp-b2: calc(var(--sp-base) / 2);
+  --sp-1b: calc(var(--sp-base) * 1);
+  --sp-2b: calc(var(--sp-base) * 2);
+  --sp-3b: calc(var(--sp-base) * 3);
+  --sp-4b: calc(var(--sp-base) * 4);
+  --sp-5b: calc(var(--sp-base) * 5);
+  --sp-6b: calc(var(--sp-base) * 6);
+  --sp-8b: calc(var(--sp-base) * 8);
+  --sp-9b: calc(var(--sp-base) * 9);
+  --sp-10b: calc(var(--sp-base) * 10);
+
+  --fs-base: calc( 14px );
+  --fs-0: 0;
+  --fs-50: calc(var(--fs-base) * 0.5);
+  --fs-80: calc(var(--fs-base) * 0.8);
+  --fs-110: calc(var(--fs-base) * 1.1);
+  --fs-120: calc(var(--fs-base) * 1.2);
+  --fs-130: calc(var(--fs-base) * 1.3);
+  --fs-140: calc(var(--fs-base) * 1.4);
+  --fs-150: calc(var(--fs-base) * 1.5);
+  --fs-160: calc(var(--fs-base) * 1.6);
+  --fs-170: calc(var(--fs-base) * 1.7);
+  --fs-180: calc(var(--fs-base) * 1.8);
+  --fs-190: calc(var(--fs-base) * 1.9);
+  --fs-200: calc(var(--fs-base) * 2.0);
+  --fs-250: calc(var(--fs-base) * 2.5);
+  --fs-350: calc(var(--fs-base) * 3.5);
+
+  --fs-menu: var(--fs-120);
+  --fs-h2: var(--fs-180);
+  --fs-h3: var(--fs-130);
+}
