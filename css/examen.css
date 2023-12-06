@@ -1,0 +1,74 @@
+@import url("reset.css");
+
+/*Importar fuentes*/
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-weight: normal;
+}
+
+/*Estilos cabecera mobile*/
+header {
+  background-image: var(--imgHeader);
+  background-repeat: none;
+  background-size: cover;
+  text-align: center;
+  min-height: 250px; 
+}
+
+header > div:first-child::before {
+  content: "";
+  background-image: var(--logo);
+  background-size: contain;
+  padding: 3px 31px 14px 55px;
+}
+
+header > div > nav {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+header > div > nav > ul {
+  list-style: none;
+  margin-top: 24px;
+}
+
+header > div > nav > ul > li {
+  margin-top: 5px;
+}
+
+header > div > nav > ul > li > a {
+  padding: 2px 18px 2px 18px;
+  font-size: var(--fs-menu);
+  font-family: "Montserrat";
+  color: var(--color0);
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+header > div > nav > ul > li:last-child a {
+  background-color: var(--fondo5);
+}
+
+header div:last-child > h2 {
+  font-family: "Raleway-Bold";
+  color: var(--color0);
+  font-size: var(--fs-h2);
+}
+
+header div:last-child > h2 + h3 {
+  font-family: "Raleway-Regular";
+  color: var(--color0);
+  font-size: var(--fs-h3);
+}
